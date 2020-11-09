@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block link%}
+<link href="{% static 'css/login.css'%} " rel="stylesheet">
+{%endblock%}
+{%block conteudo%}
+<form class="logar">
+    <input type="email" name="email" placeholder="email" class="input">
+    <input type="password" name="pass" placeholder="senha" class="input">
+    <input type="button" name="botao" value="Logar" class="input button">
+</form>
+{%endblock%}
